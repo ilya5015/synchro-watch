@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { useState } from "react";
-import CreateRoomForm from "../../components/CreateRoomForm/CreateRoomForm.js";
 import Layout from "../../components/Layout/Layout.js";
+import Rooms from "../../components/Rooms/Rooms.js";
 
-export default function Rooms() {
+export default function RoomsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -23,13 +23,8 @@ export default function Rooms() {
           >
             Create room
           </button>
-          {isModalOpen ? (
-            <>
-              <CreateRoomForm />
-            </>
-          ) : (
-            <></>
-          )}
+
+          <Rooms />
         </main>
       </Layout>
     </>

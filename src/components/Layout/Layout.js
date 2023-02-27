@@ -5,7 +5,7 @@ function Layout({ children }) {
   return (
     <div>
       <Header />
-      {children}
+      <div style={{ margin: "10px" }}>{children}</div>
     </div>
   );
 }
